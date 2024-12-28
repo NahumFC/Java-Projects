@@ -1,0 +1,1 @@
+Buscaminas que implementa el uso de sockets de flujo mediante un modelo cliente-servidor.
