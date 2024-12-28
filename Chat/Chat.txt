@@ -1,0 +1,1 @@
+MulticastSocket implementado en una aplicación de tipo chat de sala y mensajes privados que soporta emojis y envío de archivos. 
