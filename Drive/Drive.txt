@@ -1,0 +1,1 @@
+Sockets de Datagrama implementados en una aplicación tipo Google Drive, que permite el envío y descarga de archivos, la creación y borrado de carpetas, el renombrado de archivos, considerando también el mecanismo de control de flujo de ventana deslizante y el control de error Retroceder (N), todo ello a través de una arquitectura cliente-servidor basada en UDP.
