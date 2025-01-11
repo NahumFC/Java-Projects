@@ -1,0 +1,7 @@
+Antes el servidor y el cliente ocupaba Sockets bloqueantes o sea que el servidor esperaba una conexión o datos de un cliente antes de continuar con otras tareas. Ahora el servidor funciona con ServerSocketChannel configurado como no bloqueante con configureBlocking(false), el cliente usa SocketChannel y también está configurado como no bloqueante... esto permite que el servidor pueda manejar múltiples clientes simultáneamente usando un solo hilo. 
+
+Incorporé el Selector, es lo fundamental para que sea no bloqueante ya que permite supervisar varios clientes y solo responde si algún evento ocurre... si no existiera el selector cada conexión habría requerido un hilo. 
+
+Usé el ByteBuffer en vez de usar InputStream y OutputStream ya que estos son bloqueantes, el ByteBuffer lee y escribe los datos entre el cliente y el servidor sin tener que bloquear el flujo. 
+
+Ahora si que antes el servidor bloqueaba el hilo principal hasta que una operación se completaba y ahora el servidor activa sus funciones (como accept(), read(), write()) dependiendo de las operaciones que hace el cliente. 
