@@ -1,0 +1,9 @@
+En este proyecto, se implementa un servidor web básico que soporta los siguientes métodos HTTP:
+
+	•GET: Permite a los clientes solicitar recursos, como páginas HTML o archivos, que son enviados como respuesta por el servidor.
+	•PUT: Proporciona la funcionalidad de cargar o actualizar archivos en el servidor. Este método permite enviar datos del cliente al servidor y almacenarlos en un archivo 		especificado.
+	•DELETE: Facilita la eliminación de archivos en el servidor, proporcionando un mecanismo para gestionar recursos de manera remota.
+	•HEAD: Similar al método GET, pero devuelve solo los encabezados de la respuesta HTTP sin incluir el cuerpo del archivo solicitado.
+
+
+La implementación presentada combina los conceptos teóricos de albercas de hilos con las especificaciones del protocolo HTTP, proporcionando una solución robusta para la gestión concurrente de solicitudes. Este documento detalla el funcionamiento del servidor, las características de cada método HTTP soportado y las ventajas del uso de albercas de hilos en servidores web.
