@@ -1,0 +1,3 @@
+javac TipoToken.java Token.java Scanner.java Interprete.java
+
+Interprete Prueba1.txt
